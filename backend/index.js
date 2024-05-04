@@ -33,7 +33,7 @@ app.use(cors({
 }));
 app.use("/api", router);
 
-const PORT = process.env.PORT || 8080
+const PORT = 8080 || process.env.PORT
 
 connectDB().then(() => {
     app.listen(PORT, () => {
